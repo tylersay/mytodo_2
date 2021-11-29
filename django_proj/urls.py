@@ -22,6 +22,6 @@ router = routers.DefaultRouter()
 router.register(r'todos', TodoViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path('admin/', admin.site.urls)
 ]
